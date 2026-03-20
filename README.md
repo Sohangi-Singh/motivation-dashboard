@@ -1,16 +1,137 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌞 Daily Motivation Dashboard
 
-Currently, two official plugins are available:
+A minimal and elegant React-based web application that delivers daily motivation through random quotes. Users can like, save, and revisit their favorite quotes, with data persistence using localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔄 Fetch random motivational quotes from an API
 
-## Expanding the ESLint configuration
+❤️ Like / Unlike quotes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📊 Live count of liked quotes
+
+💾 Persistent storage using localStorage (data stays after refresh)
+
+📋 View all saved quotes
+
+⏳ Loading state handling
+
+🎯 Clean and responsive UI (coffee/mocha theme)
+
+---
+
+## 🧠 Concepts Used
+
+This project demonstrates core React concepts:
+
+useState (state management)
+
+useEffect (API calls & lifecycle)
+
+Conditional Rendering
+
+Event Handling
+
+Array state updates (add/remove items)
+
+localStorage integration
+
+Responsive design using CSS
+
+---
+
+## 🛠️ Tech Stack
+
+React (with Vite)
+
+JavaScript (ES6+)
+
+CSS (custom styling)
+
+DummyJSON API (for quotes)
+
+---
+
+## 🌐 Live Demo
+
+👉 https://your-vercel-link.vercel.app
+
+---
+
+## 📂 Project Structure
+
+motivation-dashboard/
+│── src/
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── index.css
+│
+│── public/
+│── package.json
+│── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+To run this project locally:
+
+git clone https://github.com/your-username/motivation-dashboard.git
+
+cd motivation-dashboard
+npm install
+npm run dev
+
+---
+
+## 🎯 How It Works
+
+On initial load, a random quote is fetched using useEffect
+
+Users can fetch new quotes using a button
+
+Clicking "Like" stores the quote in state
+
+Liked quotes are saved in localStorage
+
+Saved quotes persist even after refreshing the page
+
+---
+
+## ⚠️ Challenges Faced
+
+Faced issues with unreliable APIs and CORS restrictions
+
+Resolved by switching to a stable API (DummyJSON)
+
+Improved UI consistency by preventing layout shifts during loading
+
+---
+
+## 🤖 Acknowledgment
+
+Used AI assistance for UI design inspiration and debugging certain issues
+
+Core logic, implementation, and understanding were done independently
+
+---
+
+👩🏻‍💻 Author
+
+Sohangi Singh
+
+---
+
+⭐ Future Improvements
+
+Add animations (fade-in quotes)
+
+Add category-based quotes
+
+Dark mode toggle
+
+Share quotes feature
+
