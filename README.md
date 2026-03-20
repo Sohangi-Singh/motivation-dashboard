@@ -1,10 +1,10 @@
-##🌞 Daily Motivation Dashboard
+## 🌞 Daily Motivation Dashboard
 
 A minimal and elegant React-based web application that delivers daily motivation through random quotes. Users can like, save, and revisit their favorite quotes, with data persistence using localStorage.
 
 ---
 
-##🚀 Features
+## 🚀 Features
 
 🔄 Fetch random motivational quotes from an API
 
@@ -22,7 +22,7 @@ A minimal and elegant React-based web application that delivers daily motivation
 
 ---
 
-##🧠 Concepts Used
+## 🧠 Concepts Used
 
 This project demonstrates core React concepts:
 
@@ -42,7 +42,7 @@ Responsive design using CSS
 
 ---
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 React (with Vite)
 
@@ -54,13 +54,13 @@ DummyJSON API (for quotes)
 
 ---
 
-##🌐 Live Demo
+## 🌐 Live Demo
 
 👉 https://your-vercel-link.vercel.app
 
 ---
 
-##📂 Project Structure
+## 📂 Project Structure
 
 motivation-dashboard/
 │── src/
@@ -74,7 +74,7 @@ motivation-dashboard/
 
 ---
 
-##⚙️ Installation & Setup
+## ⚙️ Installation & Setup
 
 To run this project locally:
 
@@ -86,7 +86,7 @@ npm run dev
 
 ---
 
-##🎯 How It Works
+## 🎯 How It Works
 
 On initial load, a random quote is fetched using useEffect
 
@@ -100,7 +100,7 @@ Saved quotes persist even after refreshing the page
 
 ---
 
-##⚠️ Challenges Faced
+## ⚠️ Challenges Faced
 
 Faced issues with unreliable APIs and CORS restrictions
 
@@ -110,7 +110,7 @@ Improved UI consistency by preventing layout shifts during loading
 
 ---
 
-##🤖 Acknowledgment
+## 🤖 Acknowledgment
 
 Used AI assistance for UI design inspiration and debugging certain issues
 
