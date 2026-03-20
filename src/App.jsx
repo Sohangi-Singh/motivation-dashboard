@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react";
+const [darkMode, setDarkMode] = useState(false);
+
+  <button onClick={() => setDarkMode(!darkMode)}>
+    {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+  </button>
 
 function App() {
   const [quote, setQuote] = useState("");
@@ -50,16 +55,16 @@ function App() {
   const isLiked = likedQuotes.includes(`${quote} - ${author}`);
 
   return (
-    <div className="container">
+    <div className={`container ${darkMode ? "dark" : ""}`}>
       <h1>Daily Motivation Dashboard</h1>
 
-      <p className="quote">
-  {loading ? "Fetching quote..." : quote}
-</p>
+      <p className="quote fade">
+        {loading ? "Fetching quote..." : quote}
+      </p>
 
-<p className="author">
-  {loading ? "" : `— ${author}`}
-</p>
+      <p className="author">
+        {loading ? "" : `— ${author}`}
+      </p>
 
       <button onClick={fetchQuote} disabled={loading}>
         {loading ? "Fetching..." : "New Quote"}

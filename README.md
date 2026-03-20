@@ -57,7 +57,7 @@ DummyJSON API (for quotes)
 
 ## 🌐 Live Demo
 
-👉 https://your-vercel-link.vercel.app
+👉 https://motivation-dashboard-silk.vercel.app/ 
 
 ---
 
@@ -75,17 +75,6 @@ motivation-dashboard/
 
 ---
 
-## ⚙️ Installation & Setup
-
-To run this project locally:
-
-git clone https://github.com/your-username/motivation-dashboard.git
-
-cd motivation-dashboard
-npm install
-npm run dev
-
----
 
 ## 🎯 How It Works
 
@@ -123,15 +112,4 @@ Core logic, implementation, and understanding were done independently
 
 Sohangi Singh
 
----
-
-⭐ Future Improvements
-
-Add animations (fade-in quotes)
-
-Add category-based quotes
-
-Dark mode toggle
-
-Share quotes feature
 
