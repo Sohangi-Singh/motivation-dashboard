@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
-const [darkMode, setDarkMode] = useState(false);
-
-  <button onClick={() => setDarkMode(!darkMode)}>
-    {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-  </button>
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false); 
+
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,7 +25,6 @@ function App() {
     setLoading(false);
   };
 
-  // load from localStorage on first render
   useEffect(() => {
     const saved = localStorage.getItem("likedQuotes");
     if (saved) {
@@ -37,7 +33,6 @@ function App() {
     fetchQuote();
   }, []);
 
-  // save to localStorage whenever likedQuotes changes
   useEffect(() => {
     localStorage.setItem("likedQuotes", JSON.stringify(likedQuotes));
   }, [likedQuotes]);
@@ -56,6 +51,12 @@ function App() {
 
   return (
     <div className={`container ${darkMode ? "dark" : ""}`}>
+      
+      {}
+      <button onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+      </button>
+
       <h1>Daily Motivation Dashboard</h1>
 
       <p className="quote fade">
@@ -87,7 +88,7 @@ function App() {
       ) : (
         likedQuotes.map((q, index) => (
           <div className="saved-quote" key={index}>
-          {q}
+            {q}
           </div>
         ))
       )}
